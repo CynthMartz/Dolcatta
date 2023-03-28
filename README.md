@@ -15,6 +15,11 @@ Insert gif or link to demo
 
 - [@CynthMartz](https://github.com/CynthMartz/)
 
+## Authors and Collaborator
+
+- [@KiaraMimbela](https://github.com/KiaraMimbela/)
+- [@MarcoPavez](https://github.com/MarcoPavez/)
+
 ## Color Reference
 
 | Color             | Hex                                                                |
