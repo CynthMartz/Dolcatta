@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Marmelad&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Dolcatta</title>
 </head>
 <body>
@@ -12,49 +14,68 @@
 
     </head>
     <!--Main-->
-    <main>
+    <main class="container">
+        <h2 class="titulo">Contáctanos</h2>
+        <img id="macaron-verde" src="assets/Macaron-verde.png" alt="Macaron-verde">
+        
+        <section class="contenido-contacto">
+            
+            <div class="contenido-datos-contacto">
+                
+                <div class="datos-contacto">
+                    <img class="iconos" src="assets/carta.png" alt="email">
+                    <a class="datos-contacto-texto" href="#">contacto@dolcatta.com</a>
+                </div>
 
-    </main>
-    <!--FOOTER-->
-    <footer>
-        <h2>Contáctanos</h2>
-        <img src="assets/Macaron-verde.png" alt="Macaron-verde">
-        <section>
-            <div>
-                <img src="assets/carta.png" alt="email">
-                <p>contacto@dolcatta.com</p>
+                <div class="datos-contacto">
                 <img src="assets/phone.png" alt="teléfono">
-                <p>+56 9 4561 8745</p>
+                <a class="datos-contacto-texto" href="#">+56 9 4561 8745</a>
+                </div>
+
+                <div class="datos-contacto">
                 <img src="assets/location.png" alt="locación">
-                <p>Avda. Bellavista, Providencia.</p>
+                <a class="datos-contacto-texto" href="#">Avda. Bellavista, Providencia.</a>
+                </div>
+
+                <div class="datos-contacto">
                 <img src="assets/instagram.png" alt="logo-instagram">
-                <p>@dolcatta</p>
+                <a class="datos-contacto-texto" href="#">@dolcatta</a>
+                </div>
+
+                <div class="datos-contacto">
                 <img src="assets/facebook.png" alt="logo-facebook">
-                <p>/dolcatta</p>
+                <a class="datos-contacto-texto" href="#">/dolcatta</a>
+                </div>
             </div>
             <form action="/procesar-formulario" method="post">
                 <fieldset>
                     <legend>Ingrese su nombre</legend> 
-                    <input type="text" id="nombre" name="nombre" required>
+                    <input class="contenido-form"   type="text" id="nombre" name="nombre" required>
                 </fieldset>
                 <fieldset>
                     <legend>Ingrese su teléfono</legend> 
-                    <input type="number" id="numero" name="numero" required>
+                    <input class="contenido-form" type="number" id="numero" name="numero" required>
                 </fieldset>
                 <fieldset>
                     <legend>Ingrese su e-mail</legend> 
-                    <input type="email" id="correo" name="correo" required>
+                    <input class="contenido-form" type="email" id="correo" name="correo" required>
                 </fieldset>
-                <fieldset>
-                    <legend>Escriba su mensaje</legend> 
-                    <textarea id="comentarios" name="comentarios"></textarea>
+                <fieldset class="mensaje">
+                    <legend >Escriba su mensaje</legend> 
+                    <textarea class="contenido-form" id="comentarios" name="comentarios"></textarea>
                 </fieldset>
                 <button type="submit">Enviar mensaje</button>
             </form>
-            <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26638.973634733735!2d-70.6298923170946!3d-33.42658902326659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf7c6e8366f7%3A0x87effcc00a478d7c!2sProvidencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1681233696005!5m2!1ses!2scl" width="1440" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
         </section>
+
+        <section class="mapa ">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26638.973634733735!2d-70.6298923170946!3d-33.42658902326659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf7c6e8366f7%3A0x87effcc00a478d7c!2sProvidencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1681233696005!5m2!1ses!2scl" width="1269" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+    <!--FOOTER-->
+    <footer class="container">
+        
+
     </footer>
 </body> 
 </html>
