@@ -5,7 +5,7 @@ A brief description of what this project does and who it's for
 
 
 ##  Proyecto 
-Pastelería
+Pastelería 
 ## Demo
 
 Insert gif or link to demo
@@ -24,9 +24,9 @@ Insert gif or link to demo
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Example Color | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #392A55 |
-| Example Color | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #F37779 |
-| Example Color | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #F4F4F4 |
+|  Color | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #392A55 |
+|  Color | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #F37779 |
+|  Color | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #F4F4F4 |
 
 
 ## Página de referencia
