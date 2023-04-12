@@ -7,7 +7,7 @@
 }
 
 html, body{
-    font-family:'Lato' ;
+    font-family:'Lato';
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -49,13 +49,15 @@ button{
     left: -76px;
     top: 67px;
 }
-
+section{
+    align-items: center;
+}
 .contenido-contacto{
     display: flex;
     box-shadow: 0px 4px 18px #D9D9D9;
     border-radius: 25px;
-    width: 1269px;
-    height: 666px;
+    width: 100%;
+    height: 35rem;
     justify-content:space-evenly;
     align-items: center;
     
