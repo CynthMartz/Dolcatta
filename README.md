@@ -24,9 +24,9 @@ Insert gif or link to demo
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-|  Color | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #392A55 |
-|  Color | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #F37779 |
-|  Color | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #F4F4F4 |
+|  Color principal | ![#392A55](https://via.placeholder.com/10/0a192f?text=+) #392A55 |
+|  Color principal| ![#F37779](https://via.placeholder.com/10/f8f8f8?text=+) #F37779 |
+|  Color complementario| ![#F4F4F4](https://via.placeholder.com/10/00b48a?text=+) #F4F4F4 |
 
 
 ## Página de referencia
