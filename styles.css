@@ -29,7 +29,7 @@ ul{
 }
 
 button{
-    border: none;
+    border: var(--main-color-1);
     background-color: var(--main-color-1);
     color:var(--complementary);
     border-radius:25px ;
@@ -228,5 +228,44 @@ textarea.input{
 .mapa{
     padding-top: 20px;
 }
+/*Responsive Mobile*/
 
+@media (max-width: 850px) {
+    .contenido-contacto{
+        grid-template-columns: 1fr;
+    }
+    #macaron-verde{
+        width: 152px;
+        height: 136px;
+        position: absolute;
+        left: -76px;
+        top: 67px;
+    }
+    .contenido-datos-contacto{
+        padding: 2rem;
+    }
+    .contact-form:before {
+        top: -13px;
+        left: initial;
+        right: 70px;
+    }
+}
+@media (max-width: 450px) {
+    .container{
+    margin: 0 ;
+    max-width: 100%;
+    padding: 2%;
+    }
+    .contenido-datos-contacto{
+        width: 100%;
 
+    }
+    .input {
+        padding: 0.45rem 1.2rem;
+    }
+    button {
+        padding: 0.45rem 1.2rem;
+    
+    }
+    
+}
