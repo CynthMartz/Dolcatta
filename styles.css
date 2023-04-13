@@ -4,6 +4,7 @@
     box-sizing: border-box;
     --main-color-1:#392A55;
     --main-color-2:#F37779;
+    --complementary:#F4F4F4;
 }
 
 html, body{
@@ -24,17 +25,29 @@ ul{
 .container{
     margin: 0 auto;
     max-width: 80%;
+    
 }
 
 button{
+    border: none;
     background-color: var(--main-color-1);
-    color: white;
+    color:var(--complementary);
     border-radius:25px ;
     font-weight: 300;
     font-size: 16px;  
     justify-content: center;
     align-items: center;
     padding: 16px;  
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    line-height: 1;
+    margin: 0;
+}
+button:hover{
+    border: 2px solid var(--complementary);
+    background-color: transparent;
+    color: var(--complementary);
 }
 /*Contacto*/
 .titulo{
@@ -53,18 +66,24 @@ section{
     align-items: center;
 }
 .contenido-contacto{
-    display: flex;
-    box-shadow: 0px 4px 18px #D9D9D9;
-    border-radius: 25px;
     width: 100%;
-    height: 35rem;
-    justify-content:space-evenly;
-    align-items: center;
+    max-width: 80%x;/*tamaño de la caja principal*/
+    background-color: var(--complementary);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px rgb(0, 0, 0, 0.1);   /*box-shadow: 0px 4px 18px #D9D9D9;*/
+    z-index: 1000;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     
 }
+
 .contenido-datos-contacto{
-    align-items: center;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    padding-left: 5rem; /*ver como no usar padding */
+    overflow: hidden;
+    position: relative; 
+    
 }
 
 .datos-contacto{
@@ -91,27 +110,123 @@ section{
     padding-left: 1rem;
     
 }
+
 /*Formulario*/
+.contact-form{
+    background-color: var(--main-color-2);
+    position: relative;
+}
 
-fieldset{
-    border-color: var(--main-color-1);
-    border-radius: 20px;
-    width: 400px;
-    margin-bottom: 1rem;
+.contact-form:before{
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background-color:var(--main-color-2);
+    transform: rotate(45deg);
+    top: 50px;
+    left: -13px;
 }
-legend{
-    font-weight: 300;
 
+form{
+    padding: 2.3rem 2.2rem;
+    z-index: 10;
+    overflow: hidden;
+    position: relative; 
 }
-.mensaje{
-    height: 180px;
+
+.input-container{
+    position: relative;
+    margin: 1rem 0;  /*entreespaciado del input*/
 }
-.contenido-form{
-    border: 0;
-    margin-bottom: 5px;
+
+.input{
+    width: 100%;
+    outline: none;
+    border: 2px solid var(--complementary);
+    background: none;
+    padding: 0.6rem 1.2rem;
+    color: var(--complementary);
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+textarea.input{
+    padding: 0.8rem 1.2rem;
+    min-height: 150px;
+    border-radius: 22px;
+    resize: none;
+    overflow-y: auto; /*la rayita*/
+}
+.input-container label{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    padding: 0 0.4rem;
+    color: var(--complementary);
+    font-size: 0.9rem;
+    font-weight: 400;
+    pointer-events: none;
+    z-index: 1000;
+    transition: 0.5s;
+}
+.input-container.textarea label{
+    top: 1rem;
+    transform: translateY(0);
+}
+
+.input-container span{
+    position: absolute;
+    top: 0;
+    left: 25px;
+    transform: translateY(-50%);
+    font-size: 0.8rem;
+    padding: 0 2rem ;  /*la linea del espacio*/
+    color: transparent;
+    pointer-events: none;
+    z-index: 500;
+}
+
+.input-container span:after{
+    content: "";
+    position: absolute;
+    width: 10%;
+    opacity: 0;
+    height: 5px;
+    top: 50%;
+    transition: 0.3s;
+    transform: translateY(-50%);
+    background-color: var(--main-color-2);
+}
+
+.input-container span:before{
+    left: 50%;
+}
+
+.input-container span:after{
+    right: 50%;
+}
+
+.input-container.focus label{
+    top: 0;
+    transform: translateY(-50%);
+    left:25px;
+    font-size: 0.8rem;
+}
+
+.input-container.focus span:before,
+.input-container.focus span:after{
+    width: 50%;
+    opacity: 1;
 }
 
 /*mapa*/
 .mapa{
     padding-top: 20px;
 }
+
+

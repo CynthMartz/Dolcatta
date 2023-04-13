@@ -47,6 +47,35 @@
                 <a class="datos-contacto-texto" href="#">/dolcatta</a>
                 </div>
             </div>
+
+            <div class="contact-form">
+                <form action="index.html" id="form" class="form" method="post" autocomplete="off">
+                
+                    <div class="input-container focus">
+                        <input class="input" type="text" name="name" required>
+                        <label for="">Nombre <span>*</span></label>
+                        <span>Nombre </span>
+                    </div>
+                    <div class="input-container focus">
+                        <input class="input" type="email" name="email"  required>
+                        <label for="">Correo  <span>*</span></label>
+                        <span>Correo </span>    
+                    </div>
+                    <div class="input-container focus">
+                        <input class="input" type="tel" name="phone">
+                        <label for="">Teléfono <span>*</span></label>
+                        <span>Teléfono</span>
+                    </div>
+                    <div class="input-container textarea focus">
+                        <textarea class="input" name="message"></textarea>
+                        <label for="">Mensaje <span>*</span></label>
+                        <span>Mensaje</span>
+                    </div>
+                    <button class="btn" type="submit" value="Send">Enviar mensaje</button>
+                </form>
+            </div>
+            
+            <!--
             <form action="/procesar-formulario" method="post">
                 <fieldset>
                     <legend>Ingrese su nombre</legend> 
@@ -66,6 +95,7 @@
                 </fieldset>
                 <button type="submit">Enviar mensaje</button>
             </form>
+            -->
         </section>
 
         <section class="mapa ">
@@ -77,5 +107,6 @@
         
 
     </footer>
+    <script src="app.js"></script>
 </body> 
 </html>
