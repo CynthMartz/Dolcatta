@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/registro.css">
+    <title>Registro</title>
+</head>
+<body>
+    
+    <form method="post" id="formRegistro">
+
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre">
+
+        <label for="rut">RUT</label>
+        <input type="text" name="rut" id="rut">
+
+        <label for="correo">Correo</label>
+        <input type="text" name="correo" id="correo">
+
+        <label for="contrasena">Contraseña</label>
+        <input type="password" name="contrasena" id="contrasena">
+
+        <label for="repetirContrasena">Repetir contraseña</label>
+        <input type="password" name="repetirContrasena" id="repetirContrasena">
+
+        <input type="submit" id="botonSubmit" value="Regístrate"></input>
+
+    </form>
+
+    <script>
+        
+const formulario = document.querySelector("form");
+formulario.addEventListener("submit", async (submitEvent) => {
+
+    submitEvent.preventDefault();
+
+    const formElement = submitEvent.currentTarget;
+    const formData = new FormData(formElement);
+    const correo = formData.get("correo");
+    const contrasena = formData.get("contrasena")
+
+    const usuario = {
+        correo,
+        contrasena
+    }
+
+    const baseURL = "http://localhost:3000";
+    const url = baseURL + "/registro"
+    const fetchConfig = {
+        method: "POST",
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(usuario)
+    }
+
+    try {
+        const respuesta = await fetch(url, fetchConfig);
+        // TODO gestionar errores
+        if (!respuesta.ok) {
+            console.error("La respuesta no está OK");
+            return;
+        }
+
+        const objetoJSON = await respuesta.json();
+        console.dir(objetoJSON);
+
+    } catch (error) {
+        //gestionar errores
+        console.error(error.code);
+        console.error(error.message);
+    }
+});
+    </script>
+
+</body>
+</html>
