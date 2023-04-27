@@ -269,3 +269,20 @@ textarea.input{
     }
     
 }
+
+/*MENU*/
+header{
+    background-color: var(--main-color-2);
+}
+.header-principal{
+    
+}
+.logotipo{
+
+}
+.menu-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
