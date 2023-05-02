@@ -9,6 +9,10 @@
 
 html, body{
     font-family:'Lato';
+    background-color: Canvas;
+    color: CanvasText;
+    color-scheme: light dark;
+
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -273,9 +277,17 @@ textarea.input{
 /*MENU*/
 header{
     background-color: var(--main-color-2);
+    height: 134px;
+
 }
 .header-principal{
-    
+
+}
+
+.header-principal--contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .logotipo{
 
